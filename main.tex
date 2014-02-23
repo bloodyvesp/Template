@@ -50,7 +50,7 @@
 \newtheorem{summary}[theorem]{Summary}
 %---------------------------------------------------------------------------
 \input{Template/definitions.tex}
-
+\IfFileExists{repoDefinitions.tex}{\input{repoDefinitions.tex}}{}
 \numberwithin{section}{chapter}
 \numberwithin{subsection}{section}
 \numberwithin{subsubsection}{subsection}
