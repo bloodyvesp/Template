@@ -12,7 +12,7 @@ to keep it that way).
 
 
 
-[[SETUP]]
+# SETUP
 Suppose you are planing to make a project ``myProject''.
 
 Include the Template directory in your main project dierctory.
