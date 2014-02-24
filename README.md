@@ -12,7 +12,7 @@ to keep it that way).
 
 
 
-# SETUP
+## SETUP
 Suppose you are planing to make a project ``myProject''.
 
 Include the Template directory in your main project dierctory.
@@ -54,3 +54,8 @@ This is an example of what I include here.
     \input{Input2/input2.tex}
 ```
 
+## Optional stuff
+
+You can optionaly define a file repoDefninitions.tex in your main project directory
+and this definition is invoked after the Template/definitions.tex file, so, you can
+redefine some commands o make your own without need to modify the LatexTemplate project. 
