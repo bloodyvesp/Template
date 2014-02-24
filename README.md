@@ -18,6 +18,7 @@ Suppose you are planing to make a project ``myProject''.
 Include the Template directory in your main project dierctory.
 
 Make a file named myProject.tex in your main directory that contains only the line
+
 ```
 \input{Template/main.tex}
 ```
