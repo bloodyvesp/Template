@@ -24,7 +24,6 @@
 
 \allowdisplaybreaks
 \setlength\parindent{0pt}
-
 \mathtoolsset{showonlyrefs}
 
 %---------------------------------------------------------------------------
@@ -66,5 +65,7 @@
 
 \normalfont
 \begin{document}
+    \bibliographystyle{alpha}
     \input{document.tex}
+    \IfFileExists{Bibtex/bibtex.bib}{\bibliography{Bibtex/bibtex}}{}
 \end{document}
