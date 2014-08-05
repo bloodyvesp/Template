@@ -11,6 +11,10 @@ I use and that not conlfict with many other things.
 to keep it that way).
 
 
+## Dependencies
+
+- `texlive-fontextra`
+- `texlive-latexextra`
 
 ## SETUP
 Suppose you are planing to make a project ``myProject''.
@@ -32,7 +36,7 @@ This is an example of what I include here.
 ```
 \frontmatter
 \title{MyProject}
-\author{Héctor Manuel Téllez Gómez}
+\author{HÃ©ctor Manuel TÃ©llez GÃ³mez}
 \date{January 27, 2014 - \today}
 \maketitle
 
