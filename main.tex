@@ -1,4 +1,4 @@
-﻿\documentclass[oneside]{book}
+\documentclass[oneside]{book}
 
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -18,10 +18,12 @@
 \usepackage{mathrsfs}
 \usepackage{mathtools}
 \usepackage{titlesec}
+\IfFileExists{packages.tex}{\input{packages.tex}}{}
 
 \titleformat{\chapter}[display]
-    {\normalfont\huge\bfseries}{\thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+    {\normalfont\normalsize\bfseries}{\thechapter}{5pt}{\normalsize}
+\titlespacing*{\chapter}{0pt}{0pt}{5pt}
+
 
 \allowdisplaybreaks
 \setlength\parindent{0pt}
@@ -51,22 +53,13 @@
 \newtheorem{summary}[theorem]{Summary}
 %---------------------------------------------------------------------------
 \input{Template/definitions.tex}
-\IfFileExists{repoDefinitions.tex}{\input{repoDefinitions.tex}}{}
-\numberwithin{section}{chapter}
-\numberwithin{subsection}{section}
-\numberwithin{subsubsection}{subsection}
-\numberwithin{paragraph}{subsubsection}
-\numberwithin{subparagraph}{paragraph}
-\numberwithin{equation}{subparagraph}
-\numberwithin{equation}{paragraph}
-\numberwithin{equation}{subsubsection}
-\numberwithin{equation}{subsection}
-\numberwithin{equation}{section}
-\numberwithin{equation}{chapter}
+
 
 \normalfont
+
+
 \begin{document}
     \bibliographystyle{alpha}
     \input{document.tex}
-    \IfFileExists{Bibtex/bibtex.bib}{\bibliography{Bibtex/bibtex}}{}
+    \IfFileExists{bibtex.bib}{\bibliography{bibtex}}{}
 \end{document}

@@ -5,8 +5,16 @@ Default personal settings that I use while writing in latex.
 
 _______________________________________________________________________
 This project is to be included in a latex project. 
+
 It has the most common libraries and definitions that 
 I use and that not conlfict with many other things. 
+
+The goal of this project is to offer a quick setup for starting a new latex project. I have
+took in consideration my 5 years using latex, and all the stuff that I need to define over and over.
+It it fits your needs, be my guest and make use of it. Unfortunately all of this kind of projects
+leave the user with less customization capabilities. But I think that new users would find it
+helpful to avoid all the ceremony required to start a latex project. 
+
 (First compiling will return no errors, no bad boxes, no warnings, it is up to you
 to keep it that way).
 
@@ -58,8 +66,29 @@ This is an example of what I include here.
     \input{Input2/input2.tex}
 ```
 
-## Optional stuff
+## Packages used:
 
-You can optionaly define a file repoDefninitions.tex in your main project directory
-and this definition is invoked after the Template/definitions.tex file, so, you can
-redefine some commands o make your own without need to modify the LatexTemplate project. 
+The default list of packages used are:
+- amsmath
+- amsthm
+- amssymb
+- array
+- color
+- courier
+- dsfont
+- float
+- embedfile
+- enumitem
+- geometry
+- inputenc
+- hyperref
+- listings
+- mathrsfs
+- mathtools
+- titlesec
+
+You can optionaly add a file named packages.tex (In your main directory) and add new packages there.
+
+## Bibtex
+
+You can optionaly add a file named bibtex.bib(In your main directory) and it will be taken as the bibliography references file.
