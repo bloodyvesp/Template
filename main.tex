@@ -1,11 +1,11 @@
-\documentclass[oneside]{book}
+\documentclass[oneside, titlepage]{article}
 
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{array}
 \usepackage{color}
-\definecolor{azul}{RGB}{20,40,140}
+\definecolor{gray}{RGB}{80,80,80}
 \usepackage{courier}
 \usepackage{dsfont}
 \usepackage{float}
@@ -13,12 +13,12 @@
 \usepackage{enumitem}
 \usepackage[scale={.8,.85}]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[colorlinks,linkcolor=azul, citecolor=azul,urlcolor=azul]{hyperref}
+\usepackage[colorlinks,linkcolor=gray, citecolor=gray,urlcolor=gray]{hyperref}
 \usepackage{listings}
 \usepackage{mathrsfs}
 \usepackage{mathtools}
 \usepackage{titlesec}
-\IfFileExists{packages.tex}{\input{packages.tex}}{}
+\IfFileExists{config.tex}{\input{config.tex}}{}
 
 \titleformat{\chapter}[display]
     {\normalfont\normalsize\bfseries}{\thechapter}{5pt}{\normalsize}
@@ -30,7 +30,7 @@
 \mathtoolsset{showonlyrefs}
 
 %---------------------------------------------------------------------------
-\newtheorem{theorem}{Theorem}
+\newtheorem{theorem}{Teorema}
 \newtheorem{acknowledgement}[theorem]{Acknowledgement}
 \newtheorem{algorithm}[theorem]{Algorithm}
 \newtheorem{axiom}[theorem]{Axiom}
@@ -39,12 +39,12 @@
 \newtheorem{conclusion}[theorem]{Conclusion}
 \newtheorem{condition}[theorem]{Condition}
 \newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{corollary}[theorem]{Corolario}
 \newtheorem{criterion}[theorem]{Criterion}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{example}[theorem]{Example}
 \newtheorem{exercise}[theorem]{Exercise}
-\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{lemma}[theorem]{Lema}
 \newtheorem{notation}[theorem]{Notation}
 \newtheorem{problem}[theorem]{Problem}
 \newtheorem{proposition}[theorem]{Proposition}
