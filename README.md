@@ -87,7 +87,7 @@ The default list of packages used are:
 - mathtools
 - titlesec
 
-You can optionaly add a file named packages.tex (In your main directory) and add new packages there.
+You can optionaly add a file named config.tex (In your main directory) and add new packages or new preamble definitions there.
 
 ## Bibtex
 
